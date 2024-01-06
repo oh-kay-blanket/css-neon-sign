@@ -1,0 +1,26 @@
+{
+  "name": "css-neon-sign",
+  "version": "1.0.0",
+  "description": "A CSS library to add a neon sign effect to text and icons",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --style=compressed css/scss/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oh-kay-blanket/css-neon-sign.git"
+  },
+  "author": "Kayla Plunkett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oh-kay-blanket/css-neon-sign/issues"
+  },
+  "homepage": "https://github.com/oh-kay-blanket/css-neon-sign#readme",
+  "dependencies": {
+    "scss": "^0.2.4"
+  }
+}
