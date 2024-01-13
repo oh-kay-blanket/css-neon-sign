@@ -34,7 +34,7 @@
 }
 
 @include keyframes(buzz) {
-    90% { opacity: 0.9; }
+    90% { opacity: 0.84; }
 }
 
 @include keyframes(turn-on) {
@@ -48,6 +48,97 @@
     61.5% { opacity: 1; }
     63% { opacity: 0; }
 
-    99.5% { opacity: 0; }
+    99.9% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@include keyframes(marquee-1) {
+    0% { opacity: 0; }
+    6.99% { opacity: 0; }
+
+    7% { opacity: 1; }
+    9% { opacity: 1; }
+
+    9.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+
+    80% { opacity: 1; }
+}
+
+@include keyframes(marquee-2) {
+    0% { opacity: 0; }
+    16.99% { opacity: 0; }
+
+    17% { opacity: 1; }
+    19% { opacity: 1; }
+
+    19.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+    
+    80% { opacity: 1; }
+}
+
+@include keyframes(marquee-3) {
+    0% { opacity: 0; }
+    26.99% { opacity: 0; }
+
+    27% { opacity: 1; }
+    29% { opacity: 1; }
+
+    29.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+    
+    80% { opacity: 1; }
+}
+
+@include keyframes(marquee-4) {
+    0% { opacity: 0; }
+    36.99% { opacity: 0; }
+
+    37% { opacity: 1; }
+    39% { opacity: 1; }
+
+    39.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+    
+    80% { opacity: 1; }
+}
+
+@include keyframes(marquee-5) {
+    0% { opacity: 0; }
+    46.99% { opacity: 0; }
+
+    47% { opacity: 1; }
+    49% { opacity: 1; }
+
+    49.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+    
+    80% { opacity: 1; }
+}
+
+@include keyframes(marquee-6) {
+    0% { opacity: 0; }
+    56.99% { opacity: 0; }
+
+    57% { opacity: 1; }
+    59% { opacity: 1; }
+
+    59.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+    
+    80% { opacity: 1; }
+}
+
+@include keyframes(marquee-7) {
+    0% { opacity: 0; }
+    66.99% { opacity: 0; }
+
+    67% { opacity: 1; }
+    69% { opacity: 1; }
+
+    69.01% { opacity: 0; }
+    79.99% { opacity: 0; }
+    
+    80% { opacity: 1; }
 }

@@ -10,49 +10,93 @@
     <style>
         
         :root {
-            --neon-color: #ff4133;
+            --blood-orange: #ff4133;
+            --purple: #ff33e4;
+            --teal: rgb(0, 255, 255);
+            --c4: rgb(235, 212, 0);
         }
         
         body {
             background-color: black;
             color: white;
+            min-height: 100vh;
             /* font-family: "Neon", sans-serif; */
         }
 
         h2 {
             font-size: 3rem;
             text-transform: uppercase;
+
+            @media (min-width: 769px) {
+                font-size: 5rem;
+            }
         }
 
         i {
             font-size: 8rem;
         }
 
-        main {
-            min-height: 100vh;
+        .blood-orange {
+            text-shadow: 0 0 0 transparent, 0 0 50px var(--blood-orange), 0 0 10px var(--blood-orange), 0 0 20px var(--blood-orange), 0 0 50px var(--blood-orange), 0 0 100px var(--blood-orange), 0 0 150px var(--blood-orange), 0 0 250px var(--blood-orange);
+            /* animation: flicker 14s infinite ; */
+            /* animation: turn-on 4s 1 ; */
+            /* animation: flicker 14s infinite , buzz 0.01s infinite , turn-on 4s 1 ; */
         }
 
-        .neon {
-            text-shadow: 0 0 0 transparent, 0 0 50px var(--neon-color), 0 0 10px var(--neon-color), 0 0 20px var(--neon-color), 0 0 50px var(--neon-color), 0 0 100px var(--neon-color), 0 0 150px var(--neon-color), 0 0 250px var(--neon-color);
-            animation: buzz 0.01s infinite alternate;
-            /* animation: flicker 14s infinite alternate; */
-            /* animation: turn-on 4s 1 alternate; */
-            /* animation: flicker 14s infinite alternate, buzz 0.01s infinite alternate, turn-on 4s 1 alternate; */
+        .purple {
+            text-shadow: 0 0 0 transparent, 0 0 50px var(--purple), 0 0 10px var(--purple), 0 0 20px var(--purple), 0 0 50px var(--purple), 0 0 100px var(--purple), 0 0 150px var(--purple), 0 0 250px var(--purple);
+            /* animation: turn-on 4s 1 ; */
+            /* animation: flicker 14s infinite , buzz 0.01s infinite , turn-on 4s 1 ; */
         }
+
+        .teal {
+            text-shadow: 0 0 0 transparent, 0 0 50px var(--teal), 0 0 10px var(--teal), 0 0 20px var(--teal), 0 0 50px var(--teal), 0 0 100px var(--teal), 0 0 150px var(--teal), 0 0 250px var(--teal);
+            /* animation: buzz 0.01s infinite ; */
+        }
+
+        .c4 {
+            text-shadow: 0 0 0 transparent, 0 0 50px var(--c4), 0 0 10px var(--c4), 0 0 20px var(--c4), 0 0 50px var(--c4), 0 0 100px var(--c4), 0 0 150px var(--c4), 0 0 250px var(--c4);
+        }
+
+        .buzz {
+            animation: buzz 0.01s infinite ;
+        }
+
+        .flicker {
+            animation: flicker 14s infinite ;
+        }
+
+        .turn-on {
+            animation: turn-on 4s 1 ;
+        }
+
+        .marquee-1 { animation: marquee-1 7s infinite }
+        .marquee-2 { animation: marquee-2 7s infinite }
+        .marquee-3 { animation: marquee-3 7s infinite }
+        .marquee-4 { animation: marquee-4 7s infinite }
+        .marquee-5 { animation: marquee-5 7s infinite }
+        .marquee-6 { animation: marquee-6 7s infinite }
+        .marquee-7 { animation: marquee-7 7s infinite }
     </style>
 
-    <body>
-        <main class="row flex-column align-items-center justify-content-center py-4">
+    <body class="d-flex flex-column align-items-center justify-content-center">
+        <main>
             <section class="text-center">
-                <h2 class="neon buzz my-3" style="font-family: 'Clip', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Despairs', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Icklips', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Kosanon', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Neon', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Partilicious', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Picadilly', sans-serif;">Let's get some light in here.</h2>
-                <i class="fas fa-female neon buzz mx-5"></i>
-                <i class="fas fa-male neon buzz mx-5"></i>
+                <h2 class="blood-orange my-5 py-3" style="font-family: 'Clip', sans-serif;">Buz<span class="buzz">z</span></h2>
+                <h2 class="teal turn-on my-5 py-3" style="font-family: 'Despairs', sans-serif;">Turn <span class="">on</span></h2>
+                <h2 class="purple my-5 py-3" style="font-family: 'Partilicious', sans-serif;">F<span class="flicker">li</span>cker</h2>
+                <!-- <h2 class="flicker my-5" style="font-family: 'Icklips', sans-serif;">Flicker</h2> -->
+                <!-- <h2 class="flicker my-5" style="font-family: 'Kosanon', sans-serif;">Flicker</h2> -->
+                <!-- <h2 class="flicker my-5" style="font-family: 'Neon', sans-serif;">Flicker</h2> -->
+                <h2 class="c4 marquee my-5" style="font-family: 'Picadilly', sans-serif;">
+                    <span class="marquee-1">M</span>
+                    <span class="marquee-2">a</span>
+                    <span class="marquee-3">r</span>
+                    <span class="marquee-4">q</span>
+                    <span class="marquee-5">u</span>
+                    <span class="marquee-6">e</span>
+                    <span class="marquee-7">e</span>
+                </h2>
             </section>
         </main>
     </body>
