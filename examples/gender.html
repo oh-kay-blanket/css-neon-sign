@@ -10,7 +10,8 @@
     <style>
         
         :root {
-            --neon-color: #ff4133;
+            --neon-color: #33ddff;
+            --neon-color2: #ff338f;
         }
         
         body {
@@ -35,6 +36,14 @@
         .neon {
             text-shadow: 0 0 0 transparent, 0 0 50px var(--neon-color), 0 0 10px var(--neon-color), 0 0 20px var(--neon-color), 0 0 50px var(--neon-color), 0 0 100px var(--neon-color), 0 0 150px var(--neon-color), 0 0 250px var(--neon-color);
             animation: buzz 0.01s infinite alternate;
+            animation: flicker 14s infinite alternate;
+            /* animation: turn-on 4s 1 alternate; */
+            /* animation: flicker 14s infinite alternate, buzz 0.01s infinite alternate, turn-on 4s 1 alternate; */
+        }
+
+        .neon2 {
+            text-shadow: 0 0 0 transparent, 0 0 50px var(--neon-color2), 0 0 10px var(--neon-color2), 0 0 20px var(--neon-color2), 0 0 50px var(--neon-color2), 0 0 100px var(--neon-color2), 0 0 150px var(--neon-color2), 0 0 250px var(--neon-color2);
+            animation: buzz 0.01s infinite alternate;
             /* animation: flicker 14s infinite alternate; */
             /* animation: turn-on 4s 1 alternate; */
             /* animation: flicker 14s infinite alternate, buzz 0.01s infinite alternate, turn-on 4s 1 alternate; */
@@ -42,17 +51,14 @@
     </style>
 
     <body>
-        <main class="row flex-column align-items-center justify-content-center py-4">
-            <section class="text-center">
-                <h2 class="neon buzz my-3" style="font-family: 'Clip', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Despairs', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Icklips', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Kosanon', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Neon', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Partilicious', sans-serif;">Let's get some light in here.</h2>
-                <h2 class="neon buzz my-3" style="font-family: 'Picadilly', sans-serif;">Let's get some light in here.</h2>
+        <main class="row align-items-center justify-content-center py-4">
+            <section class="col-4 text-center">
+                <h2 class="neon buzz my-3" style="font-family: 'Picadilly', sans-serif;">Dresses.</h2>
                 <i class="fas fa-female neon buzz mx-5"></i>
-                <i class="fas fa-male neon buzz mx-5"></i>
+            </section>
+            <section class="col-4 text-center">
+                <h2 class="neon2 buzz my-3" style="font-family: 'Picadilly', sans-serif;">Pants.</h2>
+                <i class="fas fa-male neon2 buzz mx-5"></i>
             </section>
         </main>
     </body>
